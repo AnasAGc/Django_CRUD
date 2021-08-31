@@ -1,0 +1,10 @@
+html{
+    /* background-color: rgb(177, 58, 58); */
+    background:no-repeat center center fixed url('https://images7.alphacoders.com/434/thumb-1920-434130.jpg');
+    background-size: cover;
+}   
+h1{
+    text-align: center;
+    color: white;
+    font:italic  "Fira Sans", serif;
+}    

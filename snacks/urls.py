@@ -1,5 +1,7 @@
 from django.urls import path
 from .views import SnackListView, SnackDetailView, SnackCreateView, SnackUpdateView, SnackDeleteView
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns=[
@@ -9,4 +11,4 @@ urlpatterns=[
     path('<int:pk>/delete/', SnackDeleteView.as_view(), name='snack_delete'),
     path('create/', SnackCreateView.as_view(), name='snack_create'),
 
-]
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
