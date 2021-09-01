@@ -7,4 +7,9 @@ h1{
     text-align: center;
     color: white;
     font:italic  "Fira Sans", serif;
-}    
+} 
+
+a{
+    text-decoration: none;
+    background-color: red;
+}

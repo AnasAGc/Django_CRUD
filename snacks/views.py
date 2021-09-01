@@ -1,5 +1,5 @@
 from django.views.generic import  ListView, DetailView, CreateView, UpdateView, DeleteView
-
+from django.forms import Form
 # Create your views here.
 from .models import Snack
 from django.urls import reverse_lazy
@@ -14,12 +14,12 @@ class SnackDetailView(DetailView):
 class SnackCreateView(CreateView):
     template_name= 'snack_create.html'
     model= Snack
-    fields = ['title', 'purchaser', 'description','img']
+    fields = ['title', 'purchaser', 'description']
 
 class SnackUpdateView(UpdateView):
     template_name= 'snack_update.html'
     model= Snack
-    fields = ['title', 'purchaser', 'description','img']
+    fields = ['title', 'purchaser', 'description']
 class SnackDeleteView(DeleteView):
     template_name= 'snack_delete.html'
     model= Snack
